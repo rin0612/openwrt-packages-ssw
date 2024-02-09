@@ -2,17 +2,20 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=homebox
 PKG_VERSION:=0.0.0-dev.2020062901
-PKG_RELEASE:=2
+PKG_RELEASE:=1
 
 PKG_SOURCE_URL_FILE:=v$(PKG_VERSION).tar.gz
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/XGHeaven/homebox/archive/refs/tags/
+PKG_GIT_URL:=github.com/XGHeaven/homebox
+PKG_GIT_REF:=v$(PKG_VERSION)
+PKG_SOURCE_URL:=https://codeload.$(PKG_GIT_URL)/tar.gz/$(PKG_GIT_REF)?
 PKG_HASH:=815a2a0fc5458245769648ef5b394f69fdec2573a1403b789146be0c4217a443
 
 PKG_BUILD_DEPENDS:=golang/host homebox/host
 PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
 
+HOST_BUILD_DEPENDS:=node/host
 HOST_BUILD_DIR:=$(BUILD_DIR_HOST)/${PKG_NAME}
 
 include $(INCLUDE_DIR)/host-build.mk
@@ -46,7 +49,7 @@ define Build/Configure
 	( \
 		cd $(PKG_BUILD_DIR)/server; \
 		GOPATH=$(PKG_BUILD_DIR)/.go_work/build \
-		go install -modcacherw github.com/go-bindata/go-bindata/...@latest; \
+		go get -modcacherw github.com/go-bindata/go-bindata/...; \
 	)
 endef
 
@@ -56,7 +59,7 @@ define Build/Compile
 	$(CP) $(HOST_BUILD_DIR)/build/static $(PKG_BUILD_DIR)/build/
 	( \
 		cd $(PKG_BUILD_DIR); \
-		$(GO_PKG_VARS) PATH=$(PKG_BUILD_DIR)/.go_work/build/bin:$$$$PATH \
+		$(GO_PKG_VARS) PATH=$$$$PATH:$(PKG_BUILD_DIR)/.go_work/build/bin \
 		$(MAKE) build-server; \
 	)
 endef
