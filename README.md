@@ -1,6 +1,12 @@
-# openwrt-packages-ssw
-自用备份插件库
+自用备份插件库 by ssw
+```
+rm -rf package/openwrt-packages/luci-app-ddnsto
+rm -rf package/openwrt-packages/ddnsto
 
+git clone https://github.com/rin0612/openwrt-packages-ssw  package/openwrt-packages-ssw
+ 
+make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
+```
 ```
 LuCI ---> Applications --->
 <*> luci-app-ddnsto
