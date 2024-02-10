@@ -49,4 +49,12 @@ make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
     <> luci-app-poweroff
         https://github.com/esirplayground/luci-app-poweroff
             by 2022.04.25
+
+<*> luci-theme-argonne
+    <> luci-theme-argonne
+        https://github.com/kenzok8/openwrt-packages/tree/master/luci-theme-argonne
+            by 2022.04.25
+    <> luci-app-argonne-config
+        https://github.com/kenzok8/openwrt-packages/tree/master/luci-theme-argonne-config
+            by 2022.04.25
 ```
