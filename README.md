@@ -1,10 +1,18 @@
 自用备份插件库 by ssw
 ```
-rm -rf package/openwrt-packages/luci-app-ddnsto
-rm -rf package/openwrt-packages/ddnsto
-
 git clone https://github.com/rin0612/openwrt-packages-ssw  package/openwrt-packages-ssw
- 
+git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
+
+rm -rf package/openwrt-packages/UnblockNeteaseMusic
+rm -rf package/openwrt-packages/luci-app-unblockneteasemusic
+rm -rf package/openwrt-packages/luci-theme-argon
+rm -rf package/openwrt-packages/luci-app-argon-config
+
+rm -rf package/openwrt-packages/luci-theme-argonne
+rm -rf package/openwrt-packages/luci-app-argonne-config
+rm -rf package/openwrt-packages/ddnsto
+rm -rf package/openwrt-packages/luci-app-ddnsto
+
 make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
 ```
 
