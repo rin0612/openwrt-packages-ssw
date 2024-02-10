@@ -7,21 +7,21 @@ git clone https://github.com/rin0612/openwrt-packages-ssw  package/openwrt-packa
  
 make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
 ```
+
 ```
-LuCI ---> Applications --->
 <*> luci-app-ddnsto
-    <>ddnsto
+    <> ddnsto
         https://github.com/linkease/nas-packages/tree/master/network/services/ddnsto
             by 2024.02.09
-    <>luci-app-ddnsto
+    <> luci-app-ddnsto
         https://github.com/linkease/nas-packages-luci/tree/main/luci/luci-app-ddnsto
             by 2024.02.09
 
 <*> luci-app-homebox
-    <>homebox
+    <> homebox
         https://github.com/sirpdboy/netspeedtest/tree/master/homebox
             by 2024.02.09
-    <>luci-app-homebox
+    <> luci-app-homebox
         https://github.com/jjm2473/openwrt-apps/tree/main/luci-app-homebox
             by 2021.12.29 checkout 0be31f3c183abb205ff897ff15d1a3e9ce132446
         https://github.com/jjm2473/openwrt-apps/tree/main/homebox
@@ -31,4 +31,22 @@ LuCI ---> Applications --->
                     go install -modcacherw github.com/go-bindata/go-bindata/...@latest; \
                     $(GO_PKG_VARS) PATH=$$$$PATH:$(PKG_BUILD_DIR)/.go_work/build/bin \
                     $(GO_PKG_VARS) PATH=$(PKG_BUILD_DIR)/.go_work/build/bin:$$$$PATH \
+
+<*> luci-app-gowebdav
+    <> gowebdav
+        https://github.com/immortalwrt-collections/openwrt-gowebdav/trunk/gowebdav
+            by 2022.04.25
+    <> luci-app-gowebdav
+        https://github.com/immortalwrt-collections/openwrt-gowebdav/trunk/luci-app-gowebdav
+            by 2022.04.25
+
+<*> luci-app-autotimeset
+    <> luci-app-autotimeset
+        https://github.com/sirpdboy/luci-app-autotimeset
+            by 2022.04.25
+
+<*> luci-app-poweroff
+    <> luci-app-poweroff
+        https://github.com/esirplayground/luci-app-poweroff
+            by 2022.04.25
 ```
