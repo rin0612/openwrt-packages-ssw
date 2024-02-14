@@ -5,7 +5,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI support for ddnsto
+LUCI_TITLE:=LuCI support for ddnsto by 2024.02.09
 LUCI_DEPENDS:=+ddnsto +block-mount
 LUCI_PKGARCH:=all
 PKG_VERSION:=3.0.4
