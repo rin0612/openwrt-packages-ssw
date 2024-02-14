@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI for Zerotier
+LUCI_TITLE:=LuCI for Zerotier by 2024.02.09
 LUCI_DEPENDS:=+zerotier
 LUCI_PKGARCH:=all
 
