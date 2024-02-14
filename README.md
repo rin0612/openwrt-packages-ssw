@@ -1,7 +1,7 @@
 自用备份插件库 by ssw
 ```
 git clone https://github.com/rin0612/openwrt-packages-ssw  package/openwrt-packages-ssw
-git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
+git clone https://github.com/rin0612/openwrt-packages package/openwrt-packages -b backup.2022.04.25
 
 rm -rf package/openwrt-packages/UnblockNeteaseMusic
 rm -rf package/openwrt-packages/luci-app-unblockneteasemusic
