@@ -65,4 +65,12 @@ make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
     <> luci-app-argonne-config
         https://github.com/kenzok8/openwrt-packages/tree/master/luci-theme-argonne-config
             by 2022.04.25
+
+<*> luci-app-zerotier
+    <> zerotier
+        https://github.com/coolsnowwolf/packages/tree/master/net/zerotier
+            by 2024.02.15
+    <> luci-app-zerotier
+        https://github.com/coolsnowwolf/luci/tree/master/applications/luci-app-zerotier
+            by 2024.02.15
 ```
