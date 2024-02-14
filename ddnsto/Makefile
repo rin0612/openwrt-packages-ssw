@@ -27,14 +27,14 @@ define Package/$(PKG_NAME)
 	SECTION:=net
 	CATEGORY:=Network
 	SUBMENU:=Web Servers/Proxies
-	TITLE:=DDNS.to - the reverse proxy
+	TITLE:=DDNS.to - the reverse proxy by 2024.02.09
 	DEPENDS:=
 	PKGARCH:=all
 	URL:=https://www.ddnsto.com/
 endef
 
 define Package/$(PKG_NAME)/description
-  DDNS.to is a reverse proxy by 2024.02.09
+  DDNS.to is a reverse proxy
 endef
 
 define Package/$(PKG_NAME)/conffiles
