@@ -71,6 +71,6 @@ make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
         https://github.com/coolsnowwolf/packages/tree/master/net/zerotier
             by ssw 2024.02.15
     <> luci-app-zerotier
-        https://github.com/coolsnowwolf/luci/tree/master/applications/luci-app-zerotier
+        https://github.com/zhengmz/luci-app-zerotier
             by ssw 2024.02.15
 ```
