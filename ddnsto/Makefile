@@ -34,7 +34,7 @@ define Package/$(PKG_NAME)
 endef
 
 define Package/$(PKG_NAME)/description
-  DDNS.to is a reverse proxy
+  DDNS.to is a reverse proxy by 2024.02.09
 endef
 
 define Package/$(PKG_NAME)/conffiles
