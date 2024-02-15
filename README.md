@@ -72,6 +72,10 @@ make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
     <> luci-app-argonne-config
         https://github.com/kenzok8/openwrt-packages/tree/master/luci-theme-argonne-config
             by ssw 2022.04.25
+    备注：
+        openwrt argon主题 https://github.com/jerrykuku/luci-theme-argon/blob/master/README_ZH.md
+        原先编译的主题是这个： https://github.com/kenzok78/luci-theme-argonne
+        这个主题就是argon，目前这个仓库又重定向了： https://github.com/kenzok78/luci-theme-argone
 
 <*> luci-app-zerotier
     <> zerotier
