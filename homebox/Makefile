@@ -23,7 +23,7 @@ define Package/$(PKG_NAME)
   SECTION:=net
   CATEGORY:=Network
   SUBMENU:=Web Servers/Proxies
-  TITLE:=A Toolbox for Home Local Networks
+  TITLE:=A Toolbox for Home Local Networks by ssw 2024.02.09
   URL:=https://github.com/XGHeaven/homebox
   DEPENDS:=$(GO_ARCH_DEPENDS)
   MENU:=1

@@ -6,7 +6,7 @@ PKG_RELEASE:=1
 
 PKG_MAINTAINER:=jerrykuku <jerrykuku@qq.com>
 
-LUCI_TITLE:=LuCI page for Argonne Config
+LUCI_TITLE:=LuCI page for Argonne Config by ssw 2022.04.25
 LUCI_PKGARCH:=all
 LUCI_DEPENDS:=+luci-compat
 
