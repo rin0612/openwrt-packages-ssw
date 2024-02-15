@@ -84,4 +84,14 @@ make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
     <> luci-app-zerotier
         https://github.com/zhengmz/luci-app-zerotier
             by ssw 2024.02.15
+
+<*> luci-app-wechatpush
+    <> luci-app-wechatpush
+        https://github.com/tty228/luci-app-wechatpush
+            by ssw 2024.02.16
+
+<*> luci-app-pushbot
+    <> luci-app-pushbot
+        https://github.com/zzsj0928/luci-app-pushbot
+            by ssw 2024.02.16
 ```
