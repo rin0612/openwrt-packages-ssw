@@ -27,7 +27,7 @@ define Package/$(PKG_NAME)
 	SECTION:=net
 	CATEGORY:=Network
 	SUBMENU:=Web Servers/Proxies
-	TITLE:=DDNS.to - the reverse proxy by ssw 2024.02.09
+	TITLE:=by ssw 2024.02.09
 	DEPENDS:=
 	PKGARCH:=all
 	URL:=https://www.ddnsto.com/

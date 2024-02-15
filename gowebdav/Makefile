@@ -36,7 +36,7 @@ define Package/gowebdav
 	SECTION:=net
 	CATEGORY:=Network
 	SUBMENU:=File Transfer
-	TITLE:=A simple WebDav server written in Golang. by ssw 2022.04.25
+	TITLE:=by ssw 2022.04.25
 	URL:=https://github.com/1715173329/gowebdav
 	DEPENDS:=$(GO_ARCH_DEPENDS)
 endef
