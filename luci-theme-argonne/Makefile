@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Argonne ssw
+LUCI_TITLE:=by ssw 2022.04.25
 LUCI_DEPENDS:=
 PKG_VERSION:=1.7.3
 PKG_RELEASE:=2

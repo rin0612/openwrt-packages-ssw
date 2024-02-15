@@ -5,7 +5,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=LuCI support for homebox
+LUCI_TITLE:=by ssw 2021.12.29
 LUCI_DEPENDS:=+homebox
 LUCI_PKGARCH:=all
 PKG_VERSION:=1.0.1

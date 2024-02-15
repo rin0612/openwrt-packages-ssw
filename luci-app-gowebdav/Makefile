@@ -11,7 +11,7 @@ PKG_NAME:=luci-app-gowebdav
 PKG_VERSION:=1.0
 PKG_RELEASE:=1
 
-LUCI_TITLE:=LuCI support for GoWebDav
+LUCI_TITLE:=by ssw 2022.04.25
 LUCI_DEPENDS:=+gowebdav
 LUCI_PKGARCH:=all
 
