@@ -13,7 +13,7 @@ define Package/$(PKG_NAME)
   SECTION:=LuCI
   CATEGORY:=LuCI
   SUBMENU:=3. Applications
-  TITLE:=luci-app-autotimeset
+  TITLE:=Luci Support for autotimeset. by ssw 2022.04.25
   DEPENDS:=+luci
   DESCRIPTION:=LuCI support for Scheduled Time setting
   PKGARCH:=all
