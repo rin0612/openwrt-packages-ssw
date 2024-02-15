@@ -5,6 +5,7 @@
 ```
 git clone https://github.com/rin0612/openwrt-packages-ssw  package/openwrt-packages-ssw
 git clone https://github.com/rin0612/openwrt-packages package/openwrt-packages -b backup.2022.04.25
+git clone https://github.com/rin0612/small package/small -b backup.2022.04.25
 
 rm -rf package/openwrt-packages/UnblockNeteaseMusic
 rm -rf package/openwrt-packages/luci-app-unblockneteasemusic
@@ -16,6 +17,9 @@ rm -rf package/openwrt-packages/luci-app-argonne-config
 rm -rf package/openwrt-packages/ddnsto
 rm -rf package/openwrt-packages/luci-app-ddnsto
 
+rm -rf feeds/packages/net/zerotier
+rm -rf feeds/luci/applications/luci-app-zerotier
+    
 make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
 ```
 
