@@ -54,7 +54,7 @@ make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
 <*> luci-app-autotimeset
     <> luci-app-autotimeset
         https://github.com/sirpdboy/luci-app-autotimeset
-            by ssw 2022.04.25
+            by ssw 2024.02.15
 
 <*> luci-app-poweroff
     <> luci-app-poweroff
