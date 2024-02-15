@@ -1,4 +1,7 @@
 自用备份插件库 by ssw
+
+注意, 使用本仓库执行make menuconfig, 只有app-title显示by ssw才是本仓库的
+例如：< > luci-app-argonne-config... LuCI page for Argonne Config by ssw 2022.04.25
 ```
 git clone https://github.com/rin0612/openwrt-packages-ssw  package/openwrt-packages-ssw
 git clone https://github.com/rin0612/openwrt-packages package/openwrt-packages -b backup.2022.04.25
