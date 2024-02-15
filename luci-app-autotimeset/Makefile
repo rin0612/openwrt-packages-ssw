@@ -5,10 +5,10 @@
 
 include $(TOPDIR)/rules.mk
 
+PKG_DESCRIPTION:=LuCI support for Scheduled Time setting by ssw 2024.02.15
 LUCI_TITLE:=LuCI support for Scheduled Time setting by ssw 2024.02.15
 LUCI_PKGARCH:=all
 
-PKG_NAME:=luci-app-autotimeset
 PKG_VERSION:=2.0.2
 PKG_RELEASE:=20230718
 
