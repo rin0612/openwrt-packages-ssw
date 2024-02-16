@@ -19,13 +19,9 @@ rm -rf package/openwrt-packages/luci-theme-argonne
 rm -rf package/openwrt-packages/luci-app-argonne-config
 rm -rf package/openwrt-packages/ddnsto
 rm -rf package/openwrt-packages/luci-app-ddnsto
-rm -rf package/openwrt-packages/luci-app-pushbot
-rm -rf package/openwrt-packages/luci-app-wechatpush
 
 rm -rf feeds/packages/net/zerotier
 rm -rf feeds/luci/applications/luci-app-zerotier
-rm -rf feeds/luci/applications/luci-app-pushbot
-rm -rf feeds/luci/applications/luci-app-wechatpush
 ```
 
 ```
@@ -89,14 +85,4 @@ rm -rf feeds/luci/applications/luci-app-wechatpush
     <> luci-app-zerotier
         https://github.com/zhengmz/luci-app-zerotier
             by ssw 2024.02.15
-
-<*> luci-app-wechatpush
-    <> luci-app-wechatpush
-        https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-wechatpush
-            by ssw 2024.02.16
-
-<*> luci-app-pushbot
-    <> luci-app-pushbot
-        https://github.com/zzsj0928/luci-app-pushbot
-            by ssw 2024.02.16
 ```
