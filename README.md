@@ -85,4 +85,16 @@ rm -rf feeds/luci/applications/luci-app-zerotier
     <> luci-app-zerotier
         https://github.com/zhengmz/luci-app-zerotier
             by ssw 2024.02.15
+
+# TODO 
+<*> luci-app-unblockmusic
+    <> UnblockNeteaseMusic
+        https://github.com/coolsnowwolf/luci/tree/master/applications/luci-app-unblockmusic
+            by ssw 2024.02.16
+    <> UnblockNeteaseMusic-Go
+        https://github.com/coolsnowwolf/packages/tree/master/multimedia/UnblockNeteaseMusic-Go
+            by ssw 2024.02.16
+    <> luci-app-unblockmusic
+        https://github.com/coolsnowwolf/packages/tree/master/multimedia/UnblockNeteaseMusic
+            by ssw 2024.02.16
 ```
