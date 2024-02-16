@@ -3,6 +3,10 @@
 注意, 使用本仓库执行make menuconfig, 只有app-title显示by ssw才是本仓库的
 例如：< > luci-app-argonne-config... LuCI page for Argonne Config by ssw 2022.04.25
 ```
+git clone https://github.com/rin0612/lede -b backup.2022.04.25 openwrt
+cd openwrt
+./scripts/feeds update -a
+./scripts/feeds install -a
 git clone https://github.com/rin0612/openwrt-packages-ssw  package/openwrt-packages-ssw
 git clone https://github.com/rin0612/openwrt-packages package/openwrt-packages -b backup.2022.04.25
 git clone https://github.com/rin0612/small package/small -b backup.2022.04.25
@@ -11,16 +15,17 @@ rm -rf package/openwrt-packages/UnblockNeteaseMusic
 rm -rf package/openwrt-packages/luci-app-unblockneteasemusic
 rm -rf package/openwrt-packages/luci-theme-argon
 rm -rf package/openwrt-packages/luci-app-argon-config
-
 rm -rf package/openwrt-packages/luci-theme-argonne
 rm -rf package/openwrt-packages/luci-app-argonne-config
 rm -rf package/openwrt-packages/ddnsto
 rm -rf package/openwrt-packages/luci-app-ddnsto
+rm -rf package/openwrt-packages/luci-app-pushbot
+rm -rf package/openwrt-packages/luci-app-wechatpush
 
 rm -rf feeds/packages/net/zerotier
 rm -rf feeds/luci/applications/luci-app-zerotier
-    
-make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
+rm -rf feeds/luci/applications/luci-app-pushbot
+rm -rf feeds/luci/applications/luci-app-wechatpush
 ```
 
 ```
@@ -87,7 +92,7 @@ make package/openwrt-packages-ssw/${包名,例如homebox}/compile V=s
 
 <*> luci-app-wechatpush
     <> luci-app-wechatpush
-        https://github.com/tty228/luci-app-wechatpush
+        https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-wechatpush
             by ssw 2024.02.16
 
 <*> luci-app-pushbot
