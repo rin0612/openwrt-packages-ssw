@@ -21,7 +21,10 @@ rm -rf package/openwrt-packages/ddnsto
 rm -rf package/openwrt-packages/luci-app-ddnsto
 
 rm -rf feeds/packages/net/zerotier
+rm -rf feeds/packages/multimedia/UnblockNeteaseMusic
+rm -rf feeds/packages/multimedia/UnblockNeteaseMusic-Go
 rm -rf feeds/luci/applications/luci-app-zerotier
+rm -rf feeds/luci/applications/luci-app-unblockmusic
 ```
 
 ```
@@ -86,7 +89,6 @@ rm -rf feeds/luci/applications/luci-app-zerotier
         https://github.com/zhengmz/luci-app-zerotier
             by ssw 2024.02.15
 
-# TODO 
 <*> luci-app-unblockmusic
     <> UnblockNeteaseMusic
         https://github.com/coolsnowwolf/luci/tree/master/applications/luci-app-unblockmusic
