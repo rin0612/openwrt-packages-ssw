@@ -41,18 +41,20 @@ rm -rf feeds/luci/applications/luci-app-baidupcs-web
 
 <*> luci-app-homebox
     <> homebox
-        https://github.com/sirpdboy/netspeedtest/tree/master/homebox
-            by ssw 2024.02.09
-    <> luci-app-homebox
-        https://github.com/jjm2473/openwrt-apps/tree/main/luci-app-homebox
-            by ssw 2021.12.29 checkout 0be31f3c183abb205ff897ff15d1a3e9ce132446
         https://github.com/jjm2473/openwrt-apps/tree/main/homebox
-            此仓库此版本homebox已无法编译(提示make[4]: go-bindata: Command not found)
+            by ssw 2024.02.22
+            TODO待处理 此仓库此版本homebox已无法编译(提示make[4]: go-bindata: Command not found)
                 解决方案(未验证)
                     go get -modcacherw github.com/go-bindata/go-bindata/...; \
                     go install -modcacherw github.com/go-bindata/go-bindata/...@latest; \
                     $(GO_PKG_VARS) PATH=$$$$PATH:$(PKG_BUILD_DIR)/.go_work/build/bin \
                     $(GO_PKG_VARS) PATH=$(PKG_BUILD_DIR)/.go_work/build/bin:$$$$PATH \
+    <> homebox 
+        https://github.com/sirpdboy/netspeedtest/tree/master/homebox
+            此仓库此版本homebox无法和如下luci-app-homebox使用,luci菜单不出来(对比两个版本Makefiel估计是files文件夹和etc中的配置缺少)
+    <> luci-app-homebox
+        https://github.com/jjm2473/openwrt-apps/tree/main/luci-app-homebox
+            by ssw 2021.12.29 checkout 0be31f3c183abb205ff897ff15d1a3e9ce132446
 
 <*> luci-app-gowebdav
     <> gowebdav
