@@ -1,5 +1,7 @@
 自用备份插件库 by ssw
 
+暂时不用的备份在本仓库backup分支
+
 注意, 使用本仓库执行make menuconfig, 只有app-title显示by ssw才是本仓库的
 例如：< > luci-app-argonne-config... LuCI page for Argonne Config by ssw 2022.04.25
 ```
@@ -21,7 +23,6 @@ rm -rf package/openwrt-packages/ddnsto
 rm -rf package/openwrt-packages/luci-app-ddnsto
 
 rm -rf feeds/packages/net/zerotier
-rm -rf feeds/packages/net/baidupcs-go
 rm -rf feeds/packages/net/baidupcs-web
 rm -rf feeds/packages/multimedia/UnblockNeteaseMusic
 rm -rf feeds/packages/multimedia/UnblockNeteaseMusic-Go
@@ -92,7 +93,7 @@ rm -rf feeds/luci/applications/luci-app-baidupcs-web
         https://github.com/coolsnowwolf/packages/tree/master/net/zerotier
             by ssw 2024.02.15
     <> luci-app-zerotier
-        https://github.com/zhengmz/luci-app-zerotier
+         https://github.com/coolsnowwolf/luci/tree/master/applications/luci-app-zerotier
             by ssw 2024.02.15
 
 <*> luci-app-unblockmusic
@@ -112,8 +113,5 @@ rm -rf feeds/luci/applications/luci-app-baidupcs-web
             by ssw 2024.02.16
     <> baidupcs-web
         https://github.com/coolsnowwolf/packages/tree/master/net/baidupcs-web
-            by ssw 2024.02.16
-    <> baidupcs-go      TODO待处理(这个需要确认是否已弃用)
-        https://github.com/coolsnowwolf/packages/tree/master/net/baidupcs-go
             by ssw 2024.02.16
 ```
