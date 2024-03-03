@@ -21,6 +21,7 @@ rm -rf package/openwrt-packages/luci-theme-argonne
 rm -rf package/openwrt-packages/luci-app-argonne-config
 rm -rf package/openwrt-packages/ddnsto
 rm -rf package/openwrt-packages/luci-app-ddnsto
+rm -rf package/small/luci-app-openclash
 
 rm -rf feeds/packages/net/zerotier
 rm -rf feeds/packages/net/baidupcs-web
@@ -114,4 +115,9 @@ rm -rf feeds/luci/applications/luci-app-baidupcs-web
     <> baidupcs-web
         https://github.com/coolsnowwolf/packages/tree/master/net/baidupcs-web
             by ssw 2024.02.16
+
+<*> luci-app-openclash
+    < > luci-app-openclash
+        https://github.com/vernesong/OpenClash
+            by ssw 2024.03.03
 ```
