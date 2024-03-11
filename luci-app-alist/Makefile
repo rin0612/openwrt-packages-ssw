@@ -9,7 +9,7 @@ PKG_NAME:=luci-app-alist
 PKG_VERSION:=1.0.11
 PKG_RELEASE:=1
 
-LUCI_TITLE:=LuCI support for alist
+LUCI_TITLE:=by ssw 2024.03.11
 LUCI_DEPENDS:=+alist +luci-compat
 
 define Package/$(PKG_NAME)/conffiles

@@ -120,4 +120,12 @@ rm -rf feeds/luci/applications/luci-app-baidupcs-web
     < > luci-app-openclash
         https://github.com/vernesong/OpenClash
             by ssw 2024.03.03
+
+<*> luci-app-alist
+    < > luci-app-alist
+        https://github.com/sbwml/luci-app-alist
+            by ssw 2024.03.11
+    < > alist
+        https://github.com/sbwml/luci-app-alist
+            by ssw 2024.03.11
 ```
