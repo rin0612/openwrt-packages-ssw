@@ -7,7 +7,7 @@ PKG_RELEASE:=
 
 LUCI_TITLE:=by ssw 2024.03.14
 LUCI_PKGARCH:=all
-LUCI_DEPENDS:=+lsblk +docker +luci-lib-taskd
+LUCI_DEPENDS:=+lsblk +docker
 
 define Package/luci-app-memos/conffiles
 /etc/config/memos
