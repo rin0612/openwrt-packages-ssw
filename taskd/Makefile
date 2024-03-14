@@ -17,7 +17,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/$(PKG_NAME)
 	SECTION:=utils
 	CATEGORY:=Utilities
-	TITLE:=Simple Task Manager
+	TITLE:=by ssw 2024.03.14
 	DEPENDS:=+procd +script-utils +coreutils-stty
 	PKGARCH:=all
 endef

@@ -8,7 +8,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Xterm.js library
+LUCI_TITLE:=by ssw 2024.03.14
 LUCI_DEPENDS:=
 
 PKG_LICENSE:=MIT

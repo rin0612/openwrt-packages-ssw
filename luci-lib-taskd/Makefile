@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=Task library
+LUCI_TITLE:=by ssw 2024.03.14
 LUCI_DEPENDS:=+luci-lib-xterm +taskd
 LUCI_EXTRA_DEPENDS:=taskd (>=1.0.3-1)
 LUCI_PKGARCH:=all
