@@ -128,4 +128,9 @@ rm -rf feeds/luci/applications/luci-app-baidupcs-web
     < > alist
         https://github.com/sbwml/luci-app-alist
             by ssw 2024.03.11
+
+<*> luci-app-memos
+    < > luci-app-memos
+       https://github.com/kenzok8/small-package/tree/main/luci-app-memos
+            by ssw 2024.03.14
 ```
