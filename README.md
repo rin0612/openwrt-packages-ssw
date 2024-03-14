@@ -130,7 +130,16 @@ rm -rf feeds/luci/applications/luci-app-baidupcs-web
             by ssw 2024.03.11
 
 <*> luci-app-memos
+    < > taskd
+       https://github.com/kenzok8/small-package/tree/main/luci-app-memos
+            by ssw 2024.03.14
+    < > luci-lib-xterm
+       https://github.com/kenzok8/small-package/tree/main/luci-app-memos
+            by ssw 2024.03.14
+    < > luci-lib-taskd
+       https://github.com/kenzok8/small-package/tree/main/luci-app-memos
+            by ssw 2024.03.14
     < > luci-app-memos
-       https://github.com/linkease/openwrt-app-actions/tree/main/applications/luci-app-memos
+       https://github.com/kenzok8/small-package/tree/main/luci-app-memos
             by ssw 2024.03.14
 ```
