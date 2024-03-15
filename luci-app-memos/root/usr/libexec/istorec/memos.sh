@@ -10,9 +10,24 @@ do_install() {
   local config=`uci get memos.@main[0].config_path 2>/dev/null`
 
   [ -z "$image_name" ] && image_name="neosmemo/memos:latest"
-  echo "docker pull ${image_name}"
-  docker pull ${image_name}
-  docker rm -f memos
+
+  if docker image ls --format '{{.Repository}}:{{.Tag}}' | grep -q ${image_name}; then
+      echo -e "Image ${image_name} already exists.\n"
+      if [[ "${image_name}" == *:latest ]]; then
+          echo -e "start update image ${image_name}.\ndocker pull ${image_name}\n"
+          docker pull ${image_name}
+      fi
+  else
+      echo -e "Image ${image_name} does not exist.\ndocker pull ${image_name}\n"
+      docker pull ${image_name}
+  fi
+
+  if docker ps -a --format '{{.Names}}' | grep -q '^memos$'; then
+      docker rm -f memos
+      echo -e "Container memos exists and has been removed\n"
+  else
+      echo -e "Container memos does not exist\n"
+  fi
 
   if [ -z "$config" ]; then
       echo "config path is empty!"
