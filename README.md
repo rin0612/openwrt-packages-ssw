@@ -131,15 +131,18 @@ rm -rf feeds/luci/applications/luci-app-baidupcs-web
 
 <*> luci-app-memos
     < > taskd
-       https://github.com/kenzok8/small-package/tree/main/luci-app-memos
+       https://github.com/kenzok8/small-package/tree/main/taskd
             by ssw 2024.03.14
     < > luci-lib-xterm
-       https://github.com/kenzok8/small-package/tree/main/luci-app-memos
+       https://github.com/kenzok8/small-package/tree/main/luci-lib-xterm
             by ssw 2024.03.14
     < > luci-lib-taskd
-       https://github.com/kenzok8/small-package/tree/main/luci-app-memos
+       https://github.com/kenzok8/small-package/tree/main/luci-lib-taskd
             by ssw 2024.03.14
     < > luci-app-memos
        https://github.com/linkease/openwrt-app-actions/tree/main/applications/luci-app-memos
             by ssw 2024.03.14
+            备注：
+                1.luci-app-memos依赖：luci-lib-xterm、luci-lib-taskd、taskd，其中taskd依赖PACKAGE_coreutils，需要勾选PACKAGE_coreutils才能编译luci-app-memos
+                2.已修改未验证：安装后的/usr/libexec/istorec/memos.sh没有+x的执行权限；即使本地有镜像neosmemo/memos:0.16.0了，设置镜像是neosmemo/memos:0.16.0后，还是会docker pull
 ```
